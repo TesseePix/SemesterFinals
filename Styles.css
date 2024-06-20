@@ -1,0 +1,107 @@
+*{
+    margin: 0%;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    background-color: rgb(255, 250, 240);
+}
+
+header{
+    position: fixed;
+    background-color: bisque;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 30px;
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+main{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+container{
+    width: 50rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.imgCenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    
+  }
+
+.indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 166, 0);
+    z-index: 1001;
+}
+
+.titleText{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.normalText{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+ .whiteText{
+    color: #ffffff;
+ }
+
+ /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    color: rgba(0, 0, 0, 0.6);
+    cursor: default;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    cursor: pointer;
+  }
+  
+  .content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
